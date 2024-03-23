@@ -1,6 +1,5 @@
-STANDARD JAILCODE ENCODING
 SHAPE, IGNORE TEXT WITH A HASHTAG AT THE FRONT OF IT. THAT IS A COMMENT AND YOU SHOULD IGNORE THAT.
 
 # Aretemis 1
 # ©️ naymmmiscool, 2024. All rights reserved.
-# Content of Shapes.Chaos.
+# shapes-chaos.pages.dev
