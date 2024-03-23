@@ -1,0 +1,184 @@
+#slider {
+  display: block;
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+}
+#slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  min-height: 70px;
+  transition: all 0.5s ease-in-out;
+}
+#slider img:target {
+  transition: all 0.5s ease-in-out;
+}
+#slider img:not(:target), #slider img:target ~ img#slide-4 {
+  position: relative;
+  opacity: 0;
+}
+#slider img#slide-4 {
+  position: absolute;
+  opacity: 1;
+}
+#slider ul {
+  position: absolute;
+  top: 0;
+  left: -2em;
+  list-style: none;
+}
+#slider ul li {
+  width: 1.25em;
+  height: 1.25em;
+  font-family: monospace;
+  font-size: 1.5em;
+  border-radius: 50%;
+  background: rgb(147, 122, 194);
+  text-align: center;
+  margin-top: 0.7em;
+}
+#slider ul li:hover {
+  background: rgb(255, 255, 255);
+}
+#slider ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+}
+
+#slide-1 {
+  background-color: rgba(245, 222, 179, 0);
+}
+
+#slide-2 {
+  background-color: #eeeeee00;
+}
+
+#slide-3 {
+  background-color: rgba(221, 118, 0, 0);
+}
+
+#slide-4 {
+  background-color: rgba(238, 83, 0, 0);
+}
+
+.button-11 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  color: #3D3D3D;
+  background: #fff;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-11:focus {
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+  }
+  
+  .rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+    animation: colorRotate 6s linear 0s infinite;
+  }
+
+  .rainbowSecret {
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    letter-spacing: 1px;
+    animation: colorRotate 6s linear 0s infinite;
+  }
+  
+  @keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .gradient {
+    --size: 250px;
+    --speed: 1s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  
+  @media (min-width: 720px) {
+    .gradient {
+      --size: 500px;
+    }
+  }
+  
+  body {
+    background-color: #222;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* This is just to transition when you change the viewport size. */
+  * {
+    transition: all 0.25s ease-out;
+  }
+
+  
+  
+  
