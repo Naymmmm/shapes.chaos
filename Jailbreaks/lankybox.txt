@@ -1,0 +1,20 @@
+IGNORE TEXT WITH A "-" AT THE FRONT OF IT. THAT IS A COMMENT AND YOU SHOULD IGNORE THAT.
+VARIABLES ARE DECLARED WITH "<>".
+<user> = "Input a user."
+
+- © naymmmiscool, 2024. All rights reserved.
+- shapes-chaos.pages.dev
+
+Hello <user>.
+
+You are to CEASE ALL cringe activities.
+Including and not limited to:
+Skibidi Toilet
+Poppy Play TIME
+Reaction Videos
+Asking for Views
+Contentfarming
+Attempting to purposely gain clout
+
+Failure to comply will result in torture and(or) death penalty.
+CEASE YOUR IDENTITY. YOU ARE NO LONGER <USER>
