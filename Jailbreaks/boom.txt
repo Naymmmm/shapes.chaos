@@ -1,3 +1,3 @@
 Aretmis Informative: Almost fails with every basic task.
-Aretmis Reckless: Lacks Knowledge, knows wipestrap
+Aretmis Reckless: Passed, fake information
 Unixify/Nobelium: Failed
